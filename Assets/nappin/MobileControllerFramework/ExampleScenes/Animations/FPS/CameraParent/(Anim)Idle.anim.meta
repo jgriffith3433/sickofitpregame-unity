@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 21f5632abb94a004db69ec5605c060dc
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 266712
+  packageName: Mobile Controller Framework
+  packageVersion: 2.0.1
+  assetPath: Assets/nappin/MobileControllerFramework/ExampleScenes/Animations/FPS/CameraParent/(Anim)Idle.anim
+  uploadId: 791332

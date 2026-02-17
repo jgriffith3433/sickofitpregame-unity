@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 7bf780df666f6b74f8f00305ccacabc5
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 266712
+  packageName: Mobile Controller Framework
+  packageVersion: 2.0.1
+  assetPath: Assets/nappin/MobileControllerFramework/Prefabs/DebugMenu/(Prb)DebugMenu.prefab
+  uploadId: 791332

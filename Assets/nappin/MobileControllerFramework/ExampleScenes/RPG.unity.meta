@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 293ae45de1ca7b84981401a808f8b1e9
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 266712
+  packageName: Mobile Controller Framework
+  packageVersion: 2.0.1
+  assetPath: Assets/nappin/MobileControllerFramework/ExampleScenes/RPG.unity
+  uploadId: 791332

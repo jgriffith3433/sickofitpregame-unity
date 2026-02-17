@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 47506295d6d253f4fa8830b665c1f8be
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 266712
+  packageName: Mobile Controller Framework
+  packageVersion: 2.0.1
+  assetPath: Assets/nappin/MobileControllerFramework/Textures/Button/Circular/Animation/(Anim)Hold.anim
+  uploadId: 791332

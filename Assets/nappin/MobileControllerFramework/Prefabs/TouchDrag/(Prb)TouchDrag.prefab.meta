@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 324bd49c71157644cba0fea864774a8a
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 266712
+  packageName: Mobile Controller Framework
+  packageVersion: 2.0.1
+  assetPath: Assets/nappin/MobileControllerFramework/Prefabs/TouchDrag/(Prb)TouchDrag.prefab
+  uploadId: 791332

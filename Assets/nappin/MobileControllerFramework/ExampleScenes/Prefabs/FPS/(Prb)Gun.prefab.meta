@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: b3f9744ef3def4d4ca67e49ad1d4cd2c
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 266712
+  packageName: Mobile Controller Framework
+  packageVersion: 2.0.1
+  assetPath: Assets/nappin/MobileControllerFramework/ExampleScenes/Prefabs/FPS/(Prb)Gun.prefab
+  uploadId: 791332

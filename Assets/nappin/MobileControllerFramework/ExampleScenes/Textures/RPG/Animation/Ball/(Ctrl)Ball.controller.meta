@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: b8230868b39ebcd4baa00fdd8e3ac927
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 266712
+  packageName: Mobile Controller Framework
+  packageVersion: 2.0.1
+  assetPath: Assets/nappin/MobileControllerFramework/ExampleScenes/Textures/RPG/Animation/Ball/(Ctrl)Ball.controller
+  uploadId: 791332

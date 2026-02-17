@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: d4b596c1a3cf1964e968b700e430a814
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 112000000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 266712
+  packageName: Mobile Controller Framework
+  packageVersion: 2.0.1
+  assetPath: Assets/nappin/MobileControllerFramework/ExampleScenes/FPS/LightingData.asset
+  uploadId: 791332

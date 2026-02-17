@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: ac73ce1467b5afc49b2d1f9cbad2c324
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 266712
+  packageName: Mobile Controller Framework
+  packageVersion: 2.0.1
+  assetPath: Assets/nappin/MobileControllerFramework/Textures/Button/Oval/Animation/(Anim)Hold.anim
+  uploadId: 791332

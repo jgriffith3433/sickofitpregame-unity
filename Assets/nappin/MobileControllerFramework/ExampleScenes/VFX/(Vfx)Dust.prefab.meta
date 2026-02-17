@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 7bd8d1dbe58ef5642a8fee0839c049d3
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 266712
+  packageName: Mobile Controller Framework
+  packageVersion: 2.0.1
+  assetPath: Assets/nappin/MobileControllerFramework/ExampleScenes/VFX/(Vfx)Dust.prefab
+  uploadId: 791332

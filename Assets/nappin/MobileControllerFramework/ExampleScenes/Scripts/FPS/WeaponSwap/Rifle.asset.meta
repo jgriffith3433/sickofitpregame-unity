@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: ef028b515d6a18e45b995c56c2236a88
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 266712
+  packageName: Mobile Controller Framework
+  packageVersion: 2.0.1
+  assetPath: Assets/nappin/MobileControllerFramework/ExampleScenes/Scripts/FPS/WeaponSwap/Rifle.asset
+  uploadId: 791332

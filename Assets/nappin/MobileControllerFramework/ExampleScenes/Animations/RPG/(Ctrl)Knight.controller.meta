@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: f38a0eded509be24d85a1c7098dc2459
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 266712
+  packageName: Mobile Controller Framework
+  packageVersion: 2.0.1
+  assetPath: Assets/nappin/MobileControllerFramework/ExampleScenes/Animations/RPG/(Ctrl)Knight.controller
+  uploadId: 791332

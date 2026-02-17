@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: f955c37925bb5d941a3f842967f39915
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 266712
+  packageName: Mobile Controller Framework
+  packageVersion: 2.0.1
+  assetPath: Assets/nappin/MobileControllerFramework/ExampleScenes/Materials/FPS/(Mat)Floor.mat
+  uploadId: 791332

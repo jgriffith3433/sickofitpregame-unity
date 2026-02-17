@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 8ce5dcaae28c1cb42ae0f0dccd8cab10
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 266712
+  packageName: Mobile Controller Framework
+  packageVersion: 2.0.1
+  assetPath: Assets/nappin/MobileControllerFramework/Textures/Button/Oval/Animation/(Ctrl)Button.controller
+  uploadId: 791332

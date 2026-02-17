@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: d8317135a4e7e8b45b7ab115bd7dcee3
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 266712
+  packageName: Mobile Controller Framework
+  packageVersion: 2.0.1
+  assetPath: Assets/nappin/MobileControllerFramework/Prefabs/Button/(Prb)ButtonThin.prefab
+  uploadId: 791332

@@ -1,0 +1,21 @@
+{
+  "name": "SickOfIt.Core",
+  "rootNamespace": "SickOfIt.Core",
+  "references": [
+    "SickOfIt.Data",
+    "nappin.MobileControllerFramework",
+    "Unity.TextMeshPro",
+    "Unity.Addressables",
+    "Unity.ResourceManager",
+    "Unity.InputSystem"
+  ],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}

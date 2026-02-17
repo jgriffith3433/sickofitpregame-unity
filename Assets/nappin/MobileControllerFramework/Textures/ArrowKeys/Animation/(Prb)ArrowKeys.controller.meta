@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 2ad2515249a8d244a9fc1c71080318ac
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 266712
+  packageName: Mobile Controller Framework
+  packageVersion: 2.0.1
+  assetPath: Assets/nappin/MobileControllerFramework/Textures/ArrowKeys/Animation/(Prb)ArrowKeys.controller
+  uploadId: 791332

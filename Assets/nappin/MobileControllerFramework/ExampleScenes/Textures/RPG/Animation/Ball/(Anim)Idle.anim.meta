@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: b58cc9c0a06c7f64fb9164c61ca58fa3
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 266712
+  packageName: Mobile Controller Framework
+  packageVersion: 2.0.1
+  assetPath: Assets/nappin/MobileControllerFramework/ExampleScenes/Textures/RPG/Animation/Ball/(Anim)Idle.anim
+  uploadId: 791332

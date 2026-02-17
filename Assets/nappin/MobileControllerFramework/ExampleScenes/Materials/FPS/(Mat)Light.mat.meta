@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 027f032147c7aed41a3a7c60a0f471d2
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 266712
+  packageName: Mobile Controller Framework
+  packageVersion: 2.0.1
+  assetPath: Assets/nappin/MobileControllerFramework/ExampleScenes/Materials/FPS/(Mat)Light.mat
+  uploadId: 791332

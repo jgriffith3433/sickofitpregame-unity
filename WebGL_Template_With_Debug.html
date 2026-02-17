@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Unity WebGL Game with Mobile Console</title>
+    
+    <!-- Eruda Mobile Console -->
+    <script src="https://cdn.jsdelivr.net/npm/eruda"></script>
+    <script>
+        // Initialize Eruda console for mobile debugging
+        eruda.init();
+        console.log('🔧 Mobile debug console loaded! Tap the green button to view logs.');
+    </script>
+    
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #000;
+        }
+        #unity-container {
+            width: 100%;
+            height: 100vh;
+        }
+        #unity-canvas {
+            width: 100%;
+            height: 100%;
+            background: #231F20;
+        }
+        #unity-loading-bar {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .spinner {
+            margin: 0 auto;
+            width: 70px;
+            text-align: center;
+        }
+        .spinner > div {
+            width: 18px;
+            height: 18px;
+            background-color: #fff;
+            border-radius: 100%;
+            display: inline-block;
+            -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+            animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+        }
+        .spinner .bounce1 { -webkit-animation-delay: -0.32s; animation-delay: -0.32s; }
+        .spinner .bounce2 { -webkit-animation-delay: -0.16s; animation-delay: -0.16s; }
+        @-webkit-keyframes sk-bouncedelay {
+            0%, 80%, 100% { -webkit-transform: scale(0) }
+            40% { -webkit-transform: scale(1.0) }
+        }
+        @keyframes sk-bouncedelay {
+            0%, 80%, 100% { transform: scale(0); }
+            40% { transform: scale(1.0); }
+        }
+    </style>
+</head>
+<body>
+    <div id="unity-container">
+        <canvas id="unity-canvas"></canvas>
+        <div id="unity-loading-bar">
+            <div class="spinner">
+                <div class="bounce1"></div>
+                <div class="bounce2"></div>
+                <div class="bounce3"></div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Unity WebGL Loader
+        var container = document.querySelector("#unity-container");
+        var canvas = document.querySelector("#unity-canvas");
+        var loadingBar = document.querySelector("#unity-loading-bar");
+        
+        // Replace these paths with your actual build paths
+        var buildUrl = "Build";
+        var loaderUrl = buildUrl + "/YourGame.loader.js";
+        var config = {
+            dataUrl: buildUrl + "/YourGame.data",
+            frameworkUrl: buildUrl + "/YourGame.framework.js",
+            codeUrl: buildUrl + "/YourGame.wasm",
+            streamingAssetsUrl: "StreamingAssets",
+            companyName: "YourCompany",
+            productName: "YourGame",
+            productVersion: "1.0.0",
+        };
+        
+        // Enhanced logging for mobile debugging
+        console.log('🎮 Starting Unity WebGL load...');
+        console.log('📱 Platform:', navigator.platform);
+        console.log('🌐 User Agent:', navigator.userAgent);
+        console.log('📊 Screen:', window.screen.width + 'x' + window.screen.height);
+        console.log('💾 Memory:', navigator.deviceMemory ? navigator.deviceMemory + 'GB' : 'Unknown');
+        
+        var script = document.createElement("script");
+        script.src = loaderUrl;
+        script.onload = () => {
+            console.log('✅ Unity loader script loaded');
+            
+            createUnityInstance(canvas, config, (progress) => {
+                console.log('⏳ Loading progress:', (progress * 100).toFixed(1) + '%');
+            }).then((unityInstance) => {
+                console.log('✅ Unity instance created successfully!');
+                loadingBar.style.display = "none";
+                
+                // Log when game is fully loaded
+                setTimeout(() => {
+                    console.log('🎮 Game should be ready now!');
+                }, 1000);
+                
+            }).catch((message) => {
+                console.error('❌ Unity load failed:', message);
+                alert('Failed to load game: ' + message);
+            });
+        };
+        
+        script.onerror = () => {
+            console.error('❌ Failed to load Unity loader script');
+            console.error('❌ Attempted URL:', loaderUrl);
+        };
+        
+        document.body.appendChild(script);
+        
+        // Log network errors
+        window.addEventListener('error', (e) => {
+            if (e.message && e.message.includes('Failed to fetch')) {
+                console.error('❌ Network error - check if files are accessible:', e);
+            }
+        });
+        
+        // Add helpful debugging info
+        console.log('%c📋 Debugging Tips:', 'font-size: 16px; font-weight: bold; color: #4CAF50;');
+        console.log('1. Tap the green Eruda button (bottom-right) to view full console');
+        console.log('2. Triple-tap in-game to show Unity Debug Console');
+        console.log('3. Look for [MOBILE DEBUG] tags in Unity logs');
+        console.log('4. Check Network tab in Eruda for failed downloads');
+        console.log('5. If stuck on "Loading", check the last log message');
+    </script>
+</body>
+</html>

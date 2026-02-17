@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 09fbfddcc1e30394b838a3c35fdfff14
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 266712
+  packageName: Mobile Controller Framework
+  packageVersion: 2.0.1
+  assetPath: Assets/nappin/MobileControllerFramework/ExampleScenes/Animations/FPS/GunParent/(Anim)Idle.anim
+  uploadId: 791332

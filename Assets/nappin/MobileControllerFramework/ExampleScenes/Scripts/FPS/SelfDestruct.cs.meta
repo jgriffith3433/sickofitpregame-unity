@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: ec2cb6f53d1c38744a1687ea4a01862b
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 266712
+  packageName: Mobile Controller Framework
+  packageVersion: 2.0.1
+  assetPath: Assets/nappin/MobileControllerFramework/ExampleScenes/Scripts/FPS/SelfDestruct.cs
+  uploadId: 791332

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 82234bd2f8326a44d991525ed7f4b8a0
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 266712
+  packageName: Mobile Controller Framework
+  packageVersion: 2.0.1
+  assetPath: Assets/nappin/MobileControllerFramework/ExampleScenes/Animations/FPS/GunParent/(Anim)Recoil.anim
+  uploadId: 791332
