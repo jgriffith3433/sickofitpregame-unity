@@ -17,6 +17,14 @@ namespace SickOfIt.Core.Progression
         [Header("Level Settings")]
         [SerializeField] private int levelNumber = 1;
 
+        [Header("Background Preloading")]
+        [Tooltip("Enable preloading next video during gameplay (may cause OOM on low-memory platforms)")]
+        [SerializeField] private bool enableVideoPreloading = true;
+        [Tooltip("Delay before starting video preload (seconds). Increase on low-memory platforms.")]
+        [SerializeField] private float videoPreloadDelay = 2f;
+        [Tooltip("Disable preloading on WebGL to prevent memory issues")]
+        [SerializeField] private bool disablePreloadOnWebGL = true;
+
         [Header("Death Scene Preloading")]
         [Tooltip("Name of the death scene to preload (e.g., 'Death1')")]
         [SerializeField] private string deathSceneName = "Death1";
@@ -105,11 +113,27 @@ namespace SickOfIt.Core.Progression
         /// </summary>
         private IEnumerator PreloadNextVideoInBackground()
         {
-            // Wait a moment for level to fully initialize
-            yield return new WaitForSeconds(2f);
+#if UNITY_WEBGL
+            // Skip video preloading on WebGL to prevent Out of Memory crashes
+            if (disablePreloadOnWebGL)
+            {
+                Debug.Log($"[LevelManager] Skipping video preload on WebGL to conserve memory");
+                yield break;
+            }
+#endif
+
+            if (!enableVideoPreloading)
+            {
+                Debug.Log($"[LevelManager] Video preloading disabled");
+                yield break;
+            }
+
+            // Wait for level to fully initialize and give time for memory to stabilize
+            yield return new WaitForSeconds(videoPreloadDelay);
 
             int nextVideo = levelNumber + 1;
 
+            Debug.Log($"[LevelManager] Starting background preload of Video{nextVideo}");
             AddressablesSceneLoader.Instance.PreloadVideo(nextVideo, null);
 
             // Also preload death scene if enabled
