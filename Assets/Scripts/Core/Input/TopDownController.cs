@@ -33,6 +33,8 @@ namespace SickOfIt.Core.Input
         [SerializeField] private float jumpDetectVelocityThreshold = 0.3f;
         
         [Header("Projectile Settings")]
+        [Tooltip("Enable or disable shooting")]
+        [SerializeField] private bool enableShooting = true;
         [Tooltip("Addressable address of the projectile prefab (e.g., 'Projectile_Player')")]
         [SerializeField] private string projectileAddress = "Projectile_Player";
         [Tooltip("Optional: Transform where projectiles spawn. If null, spawns at player position.")]
@@ -66,6 +68,8 @@ namespace SickOfIt.Core.Input
         [SerializeField] private InputActionReference fireAction;
         
         [Header("References")]
+        [Tooltip("Child transform containing the graphics/visuals to rotate")]
+        [SerializeField] private Transform graphicsTransform;
         [SerializeField] private Animator animator;
         [SerializeField] private Camera mainCamera;
         [SerializeField] private GameInputManager gameInputManager;
@@ -561,7 +565,16 @@ namespace SickOfIt.Core.Input
             
             // Smoothly rotate towards target
             currentYRotation = Mathf.MoveTowardsAngle(currentYRotation, targetYRotation, rotationSpeed * Time.deltaTime);
-            transform.rotation = Quaternion.Euler(0f, currentYRotation, 0f);
+            
+            // Apply rotation to graphics child if assigned, otherwise rotate the entire transform
+            if (graphicsTransform != null)
+            {
+                graphicsTransform.rotation = Quaternion.Euler(0f, currentYRotation, 0f);
+            }
+            else
+            {
+                transform.rotation = Quaternion.Euler(0f, currentYRotation, 0f);
+            }
         }
         
         private void HandleJump()
@@ -601,6 +614,7 @@ namespace SickOfIt.Core.Input
         
         private void HandleFiring()
         {
+            if (!enableShooting) return;
             if (fireDirection.magnitude < InputDeadzone) return;
             if (Time.time - lastFireTime < fireRate) return;
             if (!isProjectileReady) return;
