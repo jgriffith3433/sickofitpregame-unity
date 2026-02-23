@@ -100,8 +100,8 @@ namespace SickOfIt.Core.Progression
             // Open relative URL based on video number
             if (videoNumber == 1)
             {
-                Debug.Log("VideoManager: Video 1 complete, opening /Game");
-                OpenRelativeURL("/Game");
+                Debug.Log("VideoManager: Video 1 complete, opening /BuyGame");
+                OpenRelativeURL("/BuyGame");
                 return;
             }
             else if (videoNumber == 2)

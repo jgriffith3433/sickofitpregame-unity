@@ -45,8 +45,8 @@ namespace SickOfIt.VideoFrameExtractor.Runtime
         [Tooltip("If true, opens a relative URL when playback completes (non-looping only)")]
         [SerializeField] private bool openUrlOnComplete = false;
         
-        [Tooltip("Relative URL to open when playback completes (e.g., /Game, /TakeGame)")]
-        [SerializeField] private string relativeUrlOnComplete = "/Game";
+        [Tooltip("Relative URL to open when playback completes (e.g., /BuyGame, /TakeGame)")]
+        [SerializeField] private string relativeUrlOnComplete = "/BuyGame";
 
         [Header("Debug Info")]
         [SerializeField] private List<Sprite> frames = new List<Sprite>(); // Loaded frames
